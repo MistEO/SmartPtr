@@ -3,9 +3,10 @@
 
 int main(void)
 {
-	SmartPtr<int> p1(new int(1));
-	SmartPtr<int> p2(new int(2));
+	auto p1 = MakeSmart<int>(1);
+	auto p2 = MakeSmart<int>(2);
 	p2 = p1;
 	std::cout << *p2 << std::endl;
+	auto p3 = MakeSmart<int>();
 	return 0;
 }

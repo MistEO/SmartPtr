@@ -1,3 +1,5 @@
+#pragma once
+
 template<typename Type>
 class SmartPtr;
 
@@ -16,5 +18,5 @@ private:
 	}
 
 	Type * p = nullptr;
-	int count;
+	int count = 0;
 };
